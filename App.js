@@ -1,6 +1,6 @@
-import { PureComponent } from 'react';
-import AppRoot           from './components/AppRoot';
-import store             from './store';
+import AppRoot                  from './components/AppRoot';
+import React, { PureComponent } from 'react';
+import store                    from './store';
 
 
 export default class App extends PureComponent {

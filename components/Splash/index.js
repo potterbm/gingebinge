@@ -1,20 +1,17 @@
-import {
-  Text,
-  View,
-} from 'react-native';
-import Button from '../shared/Button';
+import { Text, View } from 'react-native';
+import Button         from '../Button';
 import React          from 'react';
 import styles         from './styles';
-import typography     from '../../typography';
 
 export default class Splash extends React.Component {
   render() {
     return (
       <View style={ styles.Root }>
         <View style={ styles.TextContainer }>
-          <Text style={ [typography.h1, styles.Title] }>GET</Text>
-          <Text style={ [typography.h1, styles.Title] }>SHIT</Text>
-          <Text style={ [typography.h1, styles.Title] }>DONE</Text>
+          <Text style={ styles.Title }>GingeBinge</Text>
+          <Text style={ styles.SubTitle }>
+            A celebrations of the ginger lifestyle
+          </Text>
         </View>
 
         <View style={ styles.Callout }>

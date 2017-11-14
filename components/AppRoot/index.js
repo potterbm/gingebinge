@@ -1,9 +1,10 @@
-import { TabBarIOS }                       from 'react-native';
-import containerFactory                    from '../../containers/factory';
-import ImageList                           from '../ImageList';
-import Immutable                           from 'immutable';
-import React, { PureComponent, PropTypes } from 'react';
-import Splash                              from '../Splash';
+import { TabBarIOS }            from 'react-native';
+import containerFactory         from '../../containers/factory';
+import ImageList                from '../ImageList';
+import Immutable                from 'immutable';
+import PropTypes                from 'prop-types';
+import React, { PureComponent } from 'react';
+import Splash                   from '../Splash';
 
 export default containerFactory(class AppRoot extends PureComponent {
   static propTypes = {
