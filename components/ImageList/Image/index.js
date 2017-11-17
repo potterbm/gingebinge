@@ -1,4 +1,4 @@
-import { Image, View }          from 'react-native';
+import { Image, Text, View }    from 'react-native';
 import Immutable                from 'immutable';
 import PropTypes                from 'prop-types';
 import React, { PureComponent } from 'react';
@@ -16,6 +16,7 @@ export default class App extends PureComponent {
 
     return (
       <View style={ styles.Root }>
+        <Text>here is some text</Text>
         <Image style={ styles.Image } source={{ uri }} />
       </View>
     );

@@ -1,9 +1,10 @@
-import { FlatList, View }       from 'react-native';
-import Image                    from './Image';
-import Immutable                from 'immutable';
-import PropTypes                from 'prop-types';
-import React, { PureComponent } from 'react';
-import styles                   from './styles';
+import { View }           from 'react-native';
+import { ImmutableVirtualizedList } from 'react-native-immutable-list-view';
+import Image                        from './Image';
+import Immutable                    from 'immutable';
+import PropTypes                    from 'prop-types';
+import React, { PureComponent }     from 'react';
+import styles                       from './styles';
 
 export default class App extends PureComponent {
   static propTypes = {
@@ -12,19 +13,20 @@ export default class App extends PureComponent {
 
   getImageKey = (item) => `image-${item.get('id')}`
 
-  renderImage({ item }) {
-    return (
-      <Image image={ item } />
-    );
-  }
+  renderImage = ({ item }) => <Image image={ item } />
 
   render() {
     return (
       <View style={ styles.Root }>
-        <FlatList
-          data={ this.props.images.get('loaded') }
+        <ImmutableVirtualizedList
+          directionalLockEnabled
+          horizontal
+          immutableData={ this.props.images.get('loaded') }
           keyExtractor={ this.getImageKey }
+          pagingEnabled
           renderItem={ this.renderImage }
+          showsHorizontalScrollIndicator={ false }
+          snapToAlignment="center"
         />
       </View>
     );

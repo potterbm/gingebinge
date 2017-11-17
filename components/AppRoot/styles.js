@@ -9,12 +9,4 @@ export default StyleSheet.create({
     justifyContent: 'space-between',
     width: '100%',
   },
-
-  Text: {
-    textAlign: 'left',
-  },
-
-  Callout: {
-    textAlign: 'center',
-  },
 });
