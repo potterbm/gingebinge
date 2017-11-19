@@ -3,8 +3,10 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
   Root: {
     alignItems: 'stretch',
-    backgroundColor: '#00ff00',
     flex: 1,
+    flexDirection: 'row',
+    height: '100%',
     justifyContent: 'flex-start',
+    paddingTop: 20,
   },
 });

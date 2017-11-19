@@ -21,15 +21,14 @@ export default StyleSheet.create({
   },
 
   ImageWrapper: {
-    // borderTopRightRadius: 10,
-    // borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+    borderTopLeftRadius: 10,
     flex: 1,
     flexDirection: 'column',
-    // marginLeft: 20,
-    // marginRight: 20,
-    // overflow: 'hidden',
-    // width: Dimensions.get('window').width - 40,
-    width: '100%',
+    marginLeft: 20,
+    marginRight: 20,
+    overflow: 'hidden',
+    width: Dimensions.get('window').width - 40,
   },
 
   Image: {
