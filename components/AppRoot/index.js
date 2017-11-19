@@ -20,6 +20,7 @@ export default containerFactory(class AppRoot extends PureComponent {
   render() {
     const {
       auth,
+      authActions,
       images,
       ui,
       uiActions,
@@ -29,6 +30,7 @@ export default containerFactory(class AppRoot extends PureComponent {
       return (
         <Splash { ...{
           auth,
+          authActions,
         } } />
       );
     }

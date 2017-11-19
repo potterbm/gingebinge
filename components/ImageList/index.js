@@ -8,7 +8,7 @@ import styles                         from './styles';
 
 const AnimatedFlatList = Animated.createAnimatedComponent(ImmutableVirtualizedList);
 
-export default class App extends PureComponent {
+export default class ImageList extends PureComponent {
   static propTypes = {
     images : PropTypes.instanceOf(Immutable.Map),
   }

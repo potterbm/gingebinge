@@ -26,4 +26,16 @@ export default StyleSheet.create({
     justifyContent: 'flex-start',
     marginTop: 165,
   },
+
+  FacebookButton: {
+    backgroundColor: '#3b5998',
+    borderRadius: 4,
+    overflow: 'hidden',
+    padding: 20,
+  },
+
+  FacebookButtonText: {
+    color: '#ffffff',
+    textAlign: 'center',
+  },
 });
