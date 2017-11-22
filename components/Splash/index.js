@@ -32,6 +32,10 @@ export default class Splash extends PureComponent {
       });
   }
 
+  setAuthed = () => {
+    this.props.authActions.setAuth(true);
+  }
+
   // handleLoginFinished = (error, result) => {
   //   if (error) {
   //     return this.setState({
@@ -74,6 +78,13 @@ export default class Splash extends PureComponent {
             <Text style={ styles.FacebookButtonText }>Log In With Facebook</Text>
           </TouchableHighlight>
           { this.renderError() }
+
+          <TouchableHighlight
+            onPress={ this.setAuthed }
+            style={ styles.FacebookButton }
+          >
+            <Text style={ styles.FacebookButtonText }>Fake a Log In</Text>
+          </TouchableHighlight>
         </View>
       </View>
     );

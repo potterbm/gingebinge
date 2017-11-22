@@ -30,6 +30,7 @@ export default StyleSheet.create({
   FacebookButton: {
     backgroundColor: '#3b5998',
     borderRadius: 4,
+    marginTop: 10,
     overflow: 'hidden',
     padding: 20,
   },

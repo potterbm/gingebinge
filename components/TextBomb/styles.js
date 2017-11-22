@@ -15,7 +15,12 @@ export default StyleSheet.create({
   },
 
   Title: {
-    fontSize: 75,
+    fontSize: 50,
+    textAlign: 'left',
+  },
+
+  SubTitle: {
+    fontSize: 25,
     textAlign: 'left',
   },
 
@@ -23,7 +28,20 @@ export default StyleSheet.create({
     alignItems: 'stretch',
     flex: 1,
     flexDirection: 'column',
-    justifyContent: 'flex-start',
+    justifyContent: 'center',
     marginTop: 165,
+  },
+
+  ContactsButton: {
+    borderRadius: 30,
+    borderColor: '#222222',
+    borderStyle: 'solid',
+    borderWidth: 1,
+    paddingTop: 10,
+    paddingBottom: 10,
+  },
+
+  ContactsButtonText: {
+    textAlign: 'center',
   },
 });

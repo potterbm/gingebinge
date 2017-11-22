@@ -3,5 +3,5 @@ import createReducer    from '../createReducer';
 import initialState     from './initialState';
 
 export default createReducer(initialState, {
-  [actionTypes.SET_AUTH]: (state, { auth }) => state.set({ isLoggedIn : auth }),
+  [actionTypes.SET_AUTH]: (state, { auth }) => state.set('isLoggedIn', auth),
 });
